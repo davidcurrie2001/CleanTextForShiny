@@ -2,7 +2,7 @@ library(qdap)
 
 # Make sure the positions of the text you want to fidn and replace match up otherwise you'll produce nonsense
 toFind <- c("'","’","€","≤","≥","°", "–", "±","×" )
-toReplace <- c("'","'","&#8364 ", "&#8804 ", "&#8805 ", "&deg ", "-", "+-", "x")
+toReplace <- c("'","'","&#8364 ", "&#8804 ", "&#8805 ", "&deg ", "-", "&#177 ", "x")
 
 Fix <- data.frame(toFind, toReplace, stringsAsFactors=FALSE)
 
