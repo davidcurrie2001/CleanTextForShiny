@@ -6,7 +6,7 @@ toReplace <- c("'","'","&#8364 ", "&#8804 ", "&#8805 ", "&deg ", "-", "+-", "x")
 
 Fix <- data.frame(toFind, toReplace, stringsAsFactors=FALSE)
 
-filesToClean <- list.files(path = "ToClean/")
+filesToClean <- list.files(path = "ToClean/", pattern="*.csv")
 
 for (myFile in filesToClean) {
 
